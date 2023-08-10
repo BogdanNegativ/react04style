@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import './index.css';
 
 class StopWatch extends Component {
   constructor(props) {
     super(props);
-    this.state = { time: new Date(0, 0, 0, 0, 0, 0) };
+    this.state = { time: new Date(0, 0, 0, 0, 0, 0, 0) };
     this.idTimeout = null;
   }
 
@@ -38,11 +39,13 @@ class StopWatch extends Component {
   }
   render() {
     return (
-      <div>
+      <div className='StopWatch'>
         <h1>{this.state.time.toLocaleTimeString('en-GB')}</h1>
-        <button onClick={this.start}>START</button>
-        <button onClick={this.reset}>RESET</button>
-        <button onClick={this.stop}>STOP</button>
+        <div className='buttons'>
+          <button className='stop' onClick={this.stop}>Pause</button>
+          <button className='start' onClick={this.start}>Start</button>
+          <button className='reset' onClick={this.reset}>Reset</button>
+        </div>
       </div>
     );
   }

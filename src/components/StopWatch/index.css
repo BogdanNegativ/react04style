@@ -1,0 +1,66 @@
+.StopWatch {
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 25px;
+    box-shadow: 0 0 5px blue;
+    border-radius: 5px;
+}
+
+.StopWatch h1 {
+    margin: 0;
+    color: #1b80c8;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 0 5px #5180ff;
+    border-radius: 5px;
+}
+
+.StopWatch .buttons {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    min-width: 80px;
+}
+
+.stop {
+    background-color: blue;
+    border: 2px solid blue;
+}
+
+.stop:hover {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.start {
+    background-color: red;
+    border: 2px solid red;
+}
+
+.start:hover {
+    color: red;
+    background-color: white;
+    border: 2px solid red;
+}
+
+.reset {
+    background-color: limegreen;
+    border: 2px solid limegreen;
+}
+
+.reset:hover {
+    color: limegreen;
+    background-color: white;
+    border: 2px solid limegreen;
+}
